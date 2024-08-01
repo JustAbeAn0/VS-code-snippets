@@ -1,0 +1,183 @@
+
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	{
+		"Main function": {
+			"prefix": "include",
+			"body": [
+				"#include <stdio.h>",
+				"int main(){",
+				"	$3",
+				"return 0;",
+				"}"
+			],
+			"description": "Code snippet for main"
+		},
+		"for": {
+			"prefix": "for",
+			"body": [
+				"for (${size_t} ${i} = ${1:0}; ${i} < ${2:length}; ${i}++)",
+				"{",
+				"	$3",
+				"}"
+			],
+			"description": "Code snippet for 'for' loop"
+		},
+		"forr": {
+			"prefix": "forr",
+			"body": [
+				"for (int ${i} = ${1:length} - 1; ${i} >= ${2:0}; ${i}--)",
+				"{",
+				"	$3",
+				"}"
+			],
+			"description": "Code snippet for reverse 'for' loop"
+		},
+		"while": {
+			"prefix": "while",
+			"body": [
+				"while ($1)",
+				"{",
+				"	$2",
+				"}"
+			],
+			"description": "Code snippet for while loop"
+		},
+		"if": {
+			"prefix": "if",
+			"body": [
+				"if ($1)",
+				"{",
+				"	$2",
+				"}"
+			],
+			"description": "Code snippet for if statement"
+		},
+		"else": {
+			"prefix": "else",
+			"body": [
+				"else",
+				"{",
+				"	$1",
+				"}"
+			],
+			"description": "Code snippet for else statement"
+		},
+		"else if": {
+			"prefix": "else if",
+			"body": [
+				"else if ($1)",
+				"{",
+				"	$2",
+				"}"
+			],
+			"description": "Code snippet for else-if statement"
+		},
+		"enum": {
+			"prefix": "enum",
+			"body": [
+				"enum ${MyEnum}",
+				"{",
+				"	$1",
+				"};"
+			],
+			"description": "Code snippet for enum"
+		},
+		"#ifdef": {
+			"prefix": "#ifdef",
+			"body": [
+				"#ifdef ${DEBUG}",
+				"$1",
+				"#endif // ${DEBUG}"
+			],
+			"description": "Code snippet for #ifdef"
+		},
+		"#ifndef": {
+			"prefix": "#ifndef",
+			"body": [
+				"#ifndef ${1:1}",
+				"$2",
+				"#endif // !$1"
+			],
+			"description": "Code snippet for #ifndef"
+		},
+		"#if": {
+			"prefix": "#if",
+			"body": [
+				"#ifdef ${1:0}",
+				"$2",
+				"#endif // $1"
+			],
+			"description": "Code snippet for #if"
+		},
+		"struct": {
+			"prefix": "struct",
+			"body": [
+				"struct ${MyStruct}",
+				"{",
+				"	$1",
+				"};"
+			],
+			"description": "Code snippet for struct"
+		},
+		"switch": {
+			"prefix": "switch",
+			"body": [
+				"switch (${switch_on})",
+				"{",
+				"default:",
+				"	break;$1",
+				"}"
+			],
+			"description": "Code snippet for switch statement"
+		},
+		"union": {
+			"prefix": "union",
+			"body": [
+				"union ${MyUnion}",
+				"{",
+				"	$1",
+				"};"
+			],
+			"description": "Code snippet for union"
+		},
+		"#inc": {
+			"prefix": "#inc",
+			"body": [
+				"#include \"$1\""
+			],
+			"description": "Code snippet for #include \" \""
+		},
+		"#inc<": {
+			"prefix": "#inc<",
+			"body": [
+				"#include <$1>"
+			],
+			"description": "Code snippet for #include < >"
+		},
+		"#def": {
+			"prefix": "#def",
+			"body": [
+				"#define \"$1\" \"$2\""
+			],
+			"description": "Code snippet for #define \" \""
+		},
+		"printf": {
+			"prefix": "printf",
+			"body": [
+				"printf(\"${0}\\\\n\");",
+			],
+			"description": "Code snippet for print statement"
+		},
+		"scanf": {
+			"prefix": "scanf",
+			"body": [
+				"scanf (\"${0}\");",
+			],
+			"description": "Code snippet scanf statement"
+		}
+	}
+	
