@@ -1,0 +1,72 @@
+{
+  "Print Statement": {
+    "prefix": "p",
+    "body": [
+      "print(\"$1\")$0"
+    ],
+    "description": "Print a string to the console"
+  },
+
+  "If Name Equals Main": {
+    "prefix": "main",
+    "body": [
+      "if __name__ == \"__main__\":",
+      "    $1"
+    ],
+    "description": "Main method guard"
+  },
+
+  "Function Definition": {
+    "prefix": "defn",
+    "body": [
+      "def ${1:function_name}(${2:params}):",
+      "    \"\"\"${3:Docstring}\"\"\"",
+      "    $0"
+    ],
+    "description": "Function definition with docstring"
+  },
+
+  "For Loop": {
+    "prefix": "fori",
+    "body": [
+      "for ${1:i} in range(${2:10}):",
+      "    $0"
+    ],
+    "description": "For loop with range"
+  },
+
+  "Class Template": {
+    "prefix": "class",
+    "body": [
+      "class ${1:ClassName}:",
+      "    def __init__(self, ${2:args}):",
+      "        $0"
+    ],
+    "description": "Class with __init__ method"
+  },
+
+  "Try Except Block": {
+    "prefix": "try",
+    "body": [
+      "try:",
+      "    $1",
+      "except ${2:Exception} as e:",
+      "    print(f\"Error: {e}\")",
+      "$0"
+    ],
+    "description": "Try/Except block"
+  },
+
+  "Argparse Boilerplate": {
+    "prefix": "argparse",
+    "body": [
+      "import argparse",
+      "",
+      "parser = argparse.ArgumentParser(description=\"${1:Your script description}\")",
+      "parser.add_argument('--${2:input}', type=str, help='${3:Path to input file}')",
+      "args = parser.parse_args()",
+      "$0"
+    ],
+    "description": "Argparse setup"
+  }
+}
