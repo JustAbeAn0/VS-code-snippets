@@ -1,9 +1,4 @@
-	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-	// same ids are connected.
-	// Example:
-	{
+{
 		"Main function": {
 			"prefix": "include",
 			"body": [
@@ -167,14 +162,14 @@
 		"printf": {
 			"prefix": "printf",
 			"body": [
-				"printf(\"${0}\\\\n\");",
+				"printf(\"${0}\\\\n\");"
 			],
 			"description": "Code snippet for print statement"
 		},
 		"scanf": {
 			"prefix": "scanf",
 			"body": [
-				"scanf (\"${0}\");",
+				"scanf (\"${0}\");"
 			],
 			"description": "Code snippet scanf statement"
 		}
